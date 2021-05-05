@@ -74,7 +74,8 @@ if __name__ == '__main__':
     assert os.path.isdir(emoji_dir)
     emoji_files = [os.path.join(emoji_dir, f) for f in os.listdir(emoji_dir)]
 
-    emojis = [load_emojis(p, set(args.emoji)) for p in emoji_files]
+    emoji_set = set(args.emoji) if args.emoji else None
+    emojis = [load_emojis(p, emoji_set) for p in emoji_files]
     emojis = [item for sublist in emojis for item in sublist]
 
     print(stack_emojis(args.input, emojis, num_levels=args.num_levels, font_size=args.font_size))
