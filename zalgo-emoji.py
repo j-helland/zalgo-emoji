@@ -63,7 +63,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--input', type=str)
     parser.add_argument('-n', '--num-levels', type=int)
     parser.add_argument('--vertical', action='store_true')
-    parser.add_argument('--emoji', default=None)
+    parser.add_argument('--emoji', default=None, nargs='+')
     parser.add_argument('--font-size', default='Huge', type=str)
     args = parser.parse_args()
 
