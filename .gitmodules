@@ -1,0 +1,3 @@
+[submodule "EmojiCodeSheet"]
+	path = EmojiCodeSheet
+	url = https://github.com/shanraisshan/EmojiCodeSheet.git
