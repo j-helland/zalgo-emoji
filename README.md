@@ -1,5 +1,7 @@
 # zalgo-emoji
-emoji-fied zalgo text using latex rendering
+emoji-fied zalgo text using latex rendering. Intended for use in mattermost.
+
+![](extremely-cursed-lol.png)
 
 # Example
 Paste the output of 
